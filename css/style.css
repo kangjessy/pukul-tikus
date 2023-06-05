@@ -1,0 +1,70 @@
+h1,
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Arial";
+  margin: 10px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background: orange;
+  padding: 15px 30px;
+  border: none;
+  color: #423e3e;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background: rgb(20, 219, 110);
+  color: #faf8f8;
+}
+
+.container {
+  margin-top: 30px;
+  width: 600px;
+  margin: auto;
+  cursor: url(../images/pukul1.png), auto;
+}
+
+.container:active {
+  cursor: url(../images/pukul2.png), auto;
+}
+
+.dompet {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.dompet::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 115px;
+  background: url(../images/dompet.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -10px;
+}
+
+.tikus {
+  width: 160px;
+  height: 150px;
+  background: url(../images/tikus.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.2s;
+  /* cursor: pointer; */
+}
+
+.dompet.muncul .tikus {
+  top: -15px;
+}
