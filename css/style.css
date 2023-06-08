@@ -1,9 +1,31 @@
+body {
+  font-family: "Arial";
+  background: #fffff1;
+}
+
+#wrapper {
+  margin: 30px auto;
+  margin-bottom: 50px;
+}
+
 h1,
 h2 {
-  font-size: 60px;
+  font-size: 50px;
+  line-height: 1;
   text-align: center;
-  font-family: "Arial";
-  margin: 10px;
+}
+
+h2 {
+  margin-top: 15px !important;
+  margin-bottom: -50px !important;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -25,7 +47,6 @@ button:focus {
 }
 
 .container {
-  margin-top: 30px;
   width: 600px;
   margin: auto;
   cursor: url(../images/pukul1.png), auto;
@@ -67,4 +88,44 @@ button:focus {
 
 .dompet.muncul .tikus {
   top: -15px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 450px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h5 {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+
+  .dompet {
+    width: 140px;
+    height: 200px;
+  }
+
+  .tikus {
+    width: 130px;
+    height: 150px;
+  }
+
+  .dompet.muncul .tikus {
+    top: -15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*  */
 }
